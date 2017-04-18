@@ -16,7 +16,8 @@ Tein SSH moduulin, joka tehtiin tunnilla. Käytin hyödyksi http://terokarvinen.
 Aluksi kirjoitin package osion ja testasin moduulia. SSH demonin asennus onnistui. Seuraavaksi tein File osion ja kopioin sshd_config tiedoston /etc/ssh/sshd_config templates kansioon. 
 
 Sitten menin templates kansion ja muutin sshd_config tiedoston sshd_config.erb tiedostoksi komennolla mv sshd_config sshd_config.erb. Muutin sshd_config tiedostosta loglevel arvoksi Verbose, joka näyttää epäonnistuneet kirjautumiset /var/log/auth.log tiedostossa. Viimeiseksi tein service osion. Jonka jälkeen, kun olin ajanut moduulin ssh demoni meni särki.
-
+## Logitiedostot
+[systemd log.txt](https://glithub.com/LM42/ssh/files/929977/systemd.log.txt)
 
 
 b) Modulit Gitistä. Tee skripti, jolla saat nopeasti modulisi kloonattua GitHubista ja ajettua vaikkapa liverompulle. Voit katsoa mallia terokarvinen/nukke GitHub-varastosta. 
