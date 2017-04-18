@@ -22,14 +22,13 @@ Sitten menin templates kansion ja muutin sshd_config tiedoston sshd_config.erb t
 `Error: /Stage[main]/Ssh/Service[ssh]: Failed to call refresh: Could not restart Service[ssh]: Execution of '/bin/systemctl restart ssh' returned 1: Job for ssh.service failed because the control process exited with error code. See "systemctl status ssh.service" and "journalctl -xe" for details.
 Error: /Stage[main]/Ssh/Service[ssh]: Could not restart Service[ssh]: Execution of '/bin/systemctl restart ssh' returned 1: Job for ssh.service failed because the control process exited with error code. See "systemctl status ssh.service" and "journalctl -xe" for details.
 `
-
-
-
-
-
 ## Logitiedostot
 [systemd log.txt](https://github.com/LM42/ssh/files/929977/systemd.log.txt)
 [Journalctl.txt](https://github.com/LM42/ssh/files/929984/Journalctl.txt)
+
+
+
+
 
 b) Modulit Gitistä. Tee skripti, jolla saat nopeasti modulisi kloonattua GitHubista ja ajettua vaikkapa liverompulle. Voit katsoa mallia terokarv inen/nukke GitHub-varastosta. 
 Linkki, repoon: https://github.com/LM42/ninjascript
