@@ -22,9 +22,9 @@ Sitten menin templates kansion ja muutin sshd_config tiedoston sshd_config.erb t
 [systemd log.txt](https://github.com/LM42/ssh/files/929977/systemd.log.txt)
 [Journalctl.txt](https://github.com/LM42/ssh/files/929984/Journalctl.txt)
 
-b) Modulit Gitistä. Tee skripti, jolla saat nopeasti modulisi kloonattua GitHubista ja ajettua vaikkapa liverompulle. Voit katsoa mallia terokarvinen/nukke GitHub-varastosta. 
+b) Modulit Gitistä. Tee skripti, jolla saat nopeasti modulisi kloonattua GitHubista ja ajettua vaikkapa liverompulle. Voit katsoa mallia terokarv inen/nukke GitHub-varastosta. 
 Linkki, repoon: https://github.com/LM42/ninjascript
 
 # Lähteet
-http://terokarvinen.com/2013/ssh-server-puppet-module-for-ubuntu-12-04
-https://help.ubuntu.com/community/SSH/OpenSSH/Configuring
+- http://terokarvinen.com/2013/ssh-server-puppet-module-for-ubuntu-12-04
+- https://help.ubuntu.com/community/SSH/OpenSSH/Configuring
