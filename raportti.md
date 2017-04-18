@@ -18,11 +18,15 @@ Tein SSH moduulin, joka tehtiin tunnilla. Käytin hyödyksi http://terokarvinen.
 Aluksi kirjoitin package osion ja testasin moduulia. SSH demonin asennus onnistui. Seuraavaksi tein File osion ja kopioin sshd_config tiedoston /etc/ssh/sshd_config templates kansioon. 
 
 Sitten menin templates kansion ja muutin sshd_config tiedoston sshd_config.erb tiedostoksi komennolla mv sshd_config sshd_config.erb. Muutin sshd_config tiedostosta loglevel arvoksi Verbose, joka näyttää epäonnistuneet kirjautumiset /var/log/auth.log tiedostossa. Viimeiseksi tein service osion. Jonka jälkeen, kun olin ajanut moduulin tuli tällainen virheilmoitus:
-´´´
-Error: /Stage[main]/Ssh/Service[ssh]: Failed to call refresh: Could not restart Service[ssh]: Execution of '/bin/systemctl restart ssh' returned 1: Job for ssh.service failed because the control process exited with error code. See "systemctl status ssh.service" and "journalctl -xe" for details.
-Error: /Stage[main]/Ssh/Service[ssh]: Could not restart Service[ssh]: Execution of '/bin/systemctl restart ssh' returned 1: Job for ssh.service failed because the control process exited with error code. See "systemctl status ssh.service" and "journalctl -xe" for details.
 
-´´´
+`Error: /Stage[main]/Ssh/Service[ssh]: Failed to call refresh: Could not restart Service[ssh]: Execution of '/bin/systemctl restart ssh' returned 1: Job for ssh.service failed because the control process exited with error code. See "systemctl status ssh.service" and "journalctl -xe" for details.
+Error: /Stage[main]/Ssh/Service[ssh]: Could not restart Service[ssh]: Execution of '/bin/systemctl restart ssh' returned 1: Job for ssh.service failed because the control process exited with error code. See "systemctl status ssh.service" and "journalctl -xe" for details.
+`
+
+
+
+
+
 ## Logitiedostot
 [systemd log.txt](https://github.com/LM42/ssh/files/929977/systemd.log.txt)
 [Journalctl.txt](https://github.com/LM42/ssh/files/929984/Journalctl.txt)
